@@ -1,1 +1,53 @@
-/* fill in styling here */
+
+#NL2{
+    margin-left: 75px;
+    
+}
+#IN2{
+    margin-left: 50px;
+    
+}
+.pos {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
+.btn {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+
+
+#lblResult{
+    font-size: large;
+}
+
+.button{
+    min-width: 50px;
+    border-radius: 15%;
+}
+
+.buttons{
+    padding: 5px
+}
+
+.numbers{
+    max-width: 100px;
+    min-height: 20px;
+    border: 1px solid black
+}
+
+
+
+.operators:checked+label{
+    font-weight: bold;
+}
