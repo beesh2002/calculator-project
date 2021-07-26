@@ -28,9 +28,9 @@ function updateResultText(value) {
 }
 
 // should clear input text values and focus the first number input
-function clearValues() {
+function clearVlaues() {
     document.getElementById("IN1").value = null;
-    document.getElementById("IN1").focus();
+    
     document.getElementById("IN2").value = null;
 }
 
