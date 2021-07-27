@@ -16,21 +16,21 @@ class Calculator {
         switch(this.operator){
             case "add": 
                 return "adding"
-                break
+                break;
             case "subtract":
                return "subtracting"
-                break
+                break;
             case "multiply":
                 return "multiplying"
-                break
+                break;
             case "divide":
                 return "dividing"
-                break
+                break;
         }
     }
-
+    
     // performa a calculation based on the currently selected operation
-    operate() {this.operator=="add"?this.add():(this.operator=="subtract"?this.subtract():(this.operator=="multiply"?this.multiply():this.divide()))}
+    operate() {this.operator=="add"?this.add():this.operator=="subtract"?this.subtract():this.operator=="multiply"?this.multiply():this.secondNumber==0?(this.attemptedDivideByZero = true): this.divide()}
 
     attemptedDivideByZero = false;
 
@@ -44,7 +44,7 @@ class Calculator {
     multiply() {this.value = this.firstNumber * this.secondNumber;}
 
     // perform divide operation
-    divide() {attemptedDivideByZero?"":( this.value = this.firstNumber / this.secondNumber);}
+    divide() { this.value = this.firstNumber / this.secondNumber;}
 }
 
 //DO NOT TOUCH THIS LINE OF CODE//
