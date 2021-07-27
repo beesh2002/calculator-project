@@ -1,7 +1,7 @@
 // setup variables and get a calculator instance
 var calObj;
 function CreateCalculator() {
-    calObj=new Calculator(parseInt(document.getElementById("IN1").value),parseInt(document.getElementById("IN2").value),getOperator());
+    calObj=new Calculator(parseInt(document.getElementById("inputNumberOne").value),parseInt(document.getElementById("inputNumberTwo").value),getOperator());
 }
 
 // perform a calculation when the operator button is clicked
@@ -29,9 +29,9 @@ function updateResultText(value) {
 
 // should clear input text values and focus the first number input
 function clearVlaues() {
-    document.getElementById("IN1").value = null;
+    document.getElementById("inputNumberOne").value = null;
     
-    document.getElementById("IN2").value = null;
+    document.getElementById("inputNumberTwo").value = null;
 }
 
 /**

@@ -1,11 +1,17 @@
 
-#NL2{
+#inputNumberOne{
     margin-left: 75px;
     
 }
-#IN2{
-    margin-left: 50px;
+#inputNumberTwo{
+    margin-left: 60px;
     
+}
+#NL1{
+    margin-left: 80px;
+}
+#NL2{
+    margin-left: 75px;
 }
 .pos {
     position: absolute;
@@ -15,7 +21,9 @@
     text-align: center;
 }
 
-
+.operators{
+    padding: 5px
+}
 
 
 
@@ -46,7 +54,10 @@
     border: 1px solid black
 }
 
-
+.clear{
+    background: grey;
+    color: white;
+}
 
 .operators:checked+label{
     font-weight: bold;
