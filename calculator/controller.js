@@ -47,7 +47,7 @@ function clearVlaues() {
  * @returns Operators
  */
 function getOperator() {
-    let sel = document.getElementsByName("operation")
+    let sel = document.getElementsByName("cal")
     var x = "";
     for (var i = 0; i < sel.length; i++){
         if (sel[i].checked){
