@@ -32,6 +32,14 @@ function clearVlaues() {
     document.getElementById("inputNumberOne").value = null;
     
     document.getElementById("inputNumberTwo").value = null;
+    document.getElementById("inputNumberOne").focus();
+    var s = document.getElementsByName("operation");
+    s[1].checked=false;
+    s[2].checked=false;
+    s[3].checked=false;
+    s[0].checked=false;
+    this.value=0;
+
 }
 
 /**
@@ -39,7 +47,7 @@ function clearVlaues() {
  * @returns Operators
  */
 function getOperator() {
-    let sel = document.getElementsByName("cal")
+    let sel = document.getElementsByName("operation")
     var x = "";
     for (var i = 0; i < sel.length; i++){
         if (sel[i].checked){
