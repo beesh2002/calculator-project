@@ -30,7 +30,7 @@ class Calculator {
     }
 
     // performa a calculation based on the currently selected operation
-    operate() {this.operator=="add"?this.add():(this.operator=="subtract"?this.subtract:(this.operator=="multiply"?this.multiply:this.divide))}
+    operate() {this.operator=="add"?this.add():(this.operator=="subtract"?this.subtract():(this.operator=="multiply"?this.multiply():this.divide()))}
 
     attemptedDivideByZero = false;
 
