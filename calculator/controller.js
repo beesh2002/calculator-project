@@ -30,10 +30,10 @@ function updateResultText(value) {
 // should clear input text values and focus the first number input
 function clearVlaues() {
     document.getElementById("inputNumberOne").value = null;
-    
+
     document.getElementById("inputNumberTwo").value = null;
     document.getElementById("inputNumberOne").focus();
-    var s = document.getElementsByName("operation");
+    var s = document.getElementsByName("cal");
     s[1].checked=false;
     s[2].checked=false;
     s[3].checked=false;
